@@ -1,0 +1,1492 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: 'Exo 2', Tahoma, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 300;	
+	color: #000000;
+		
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none; 
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px; 
+	margin: -1px;
+	bottom: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+:focus {
+	outline: none;
+}
+
+/*--- центровщик ---*/
+.container {
+	width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;	
+}
+
+/*--- таблица ---*/
+.table {
+	width: 100%;	
+
+	border-collapse: collapse;
+}
+
+.table tr {
+	border-bottom: 1px dashed #cccccc;
+}
+
+.table td {
+	padding-top: 20px;
+	padding-bottom: 5px;
+	
+}
+
+.table td:first-child {
+	width: 80%;
+	padding-right: 15px;
+}
+
+.table td:last-child {
+	font-weight: 600;
+	text-align: right;
+	color: #d79b00;
+}
+
+.table td:last-child span {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+
+
+/*--- accordeon ---*/
+.accordeon {  
+	
+}
+
+.accordeon .accordeon-title {
+	position: relative;
+
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 15px 20px 15px 50px;
+
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 24px;
+	color: #333333;
+
+	background: #f1f1f1;
+	border: 1px solid #eaeaea;
+	border-radius: 5px;
+	
+	cursor: pointer;	
+	transition: 0.1s ease-in;
+}
+
+.accordeon .accordeon-title::before {
+	content: '';
+
+	position: absolute;
+	top: 50%;
+	left: 25px;
+
+	width: 10px;
+	height: 10px;
+	margin-top: -3px;
+
+	background-color: #e0a100;
+	border-radius: 50%;
+}
+
+.accordeon .accordeon-title:hover {
+	color: #333333;
+
+	background: #e2e2e2;
+	border: 1px solid #dddddd;
+}
+
+.accordeon .accordeon-content {
+	display: none;
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 15px;
+	
+	background: #ffffff;
+	border-left: 1px solid #e0a100;
+	border-right: 1px solid #e0a100;
+}
+
+.accordeon .accordeon-content:last-child {
+	border-bottom: 1px solid #e0a100;
+}
+
+
+.as-h2 {
+	margin: 0;
+	margin-bottom: 40px;
+	padding: 0 15px;
+
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.main-header {
+	padding-bottom: 120px;
+
+	background-image: url('../img/background-header.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-header .top {
+	border-bottom: 3px double #e0a100;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 15px 0;
+	margin-bottom: 5px;
+}
+
+.top-logo {
+	position: relative;
+
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	padding-left: 140px;
+
+	font-size: 28px;
+	line-height: 30px;
+	font-weight: 600;
+	color: #e0a100;
+}
+
+.top-logo::before {
+	content: '';
+
+	position: absolute;
+	top: 20px;
+	left: 0;
+	
+	width: 120px;
+	height: 50px;
+
+	background-image: url('../img/logo.svg');
+	background-repeat: no-repeat;
+}
+
+.top-logo span {
+	font-size: 18px;
+}
+
+.top-schedule {
+	width: 350px;
+	padding: 5px 10px;
+
+	background-color: rgba(255,255,255,.12);
+	border: 1px solid rgba(255,255,255,.16);
+	border-radius: 2px;
+}
+
+.top-schedule p {
+	margin: 0;
+	margin-left: auto;
+	padding: 0;
+
+	font-size: 18px;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.top-schedule span {
+	font-weight: 300;
+}
+
+.header-address {
+	margin: 0;
+	margin-bottom: 160px;
+	padding: 0;
+	padding-left: 5px;
+
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.header-title {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+
+	font-size: 88px;
+	line-height: 70px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	color: #e0a100;
+}
+
+.header-title span {	
+	display: block;
+
+	font-size: 50px;
+	text-transform: lowercase;
+	opacity: .7;
+}
+
+.header-phone {
+	font-size: 26px;
+	font-weight: 600;
+	text-align: center;
+	color: #ffffff;
+}
+
+.header-phone p {
+	margin: 0;
+	padding: 0;
+}
+
+.header-phone .phone-desc {
+	margin-bottom: 20px;
+
+	line-height: 28px;
+}
+
+.header-phone p.phone-number {
+	font-size: 38px;
+	font-weight: 700;
+}
+
+.phone-number span {
+	font-weight: 600;
+
+	opacity: .5;
+}
+
+main h2 {
+	margin: 0;
+	margin-bottom: 40px;
+	padding: 0 15px;
+
+	font-size: 32px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #002271;
+}
+
+
+/*--- Mission ---*/
+.mission {
+	margin-bottom: 60px;
+	padding: 30px 0;	
+
+	background: #e2e2e2;
+}
+
+.mission .container {
+	position: relative;
+}
+
+.mission .container::before {
+	content: '';
+
+	position: absolute;
+	top: 5px;
+	bottom: 0;
+
+	width: 7px;
+	background-color: #e0a100;
+	background: repeating-linear-gradient(
+		-45deg,
+		#e0a100,
+		#e0a100 20px,
+		#1C244A 20px,
+		#1C244A 40px
+	); 
+}
+
+.mission-desc {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0 30px;	
+}
+
+.mission-director {
+	margin: 0;
+	padding: 0 30px;	
+}
+
+.mission-director span {
+	font-weight: 700;
+}
+
+
+
+
+/*--- Документы ---*/
+.documents {
+	margin-bottom: 75px;
+}
+
+.documents-list {
+	width: 65%;
+	margin: 0 auto;
+	padding: 0;
+
+	list-style: none;
+}
+
+.documents-list li {
+	position: relative;
+
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+.documents-list li::before {
+	content: '';
+
+	position: absolute;
+	top: 12px;
+	left: 0;
+
+	width: 5px;
+	height: 5px;	
+
+	background-color: #e0a100;
+	transform: rotate(45deg);
+}
+
+
+
+
+/*--- Тарифы ---*/
+.tariffs {
+	margin-bottom: 60px;
+	padding-top: 45px;
+
+	background: #f0f0f0;
+	background-image: url('../img/tread.png'), url('../img/tread_bottom.png');
+	background-repeat: no-repeat, no-repeat;
+	background-position: center 0, center bottom 0;
+	border-bottom: 3px solid #eaeaea;
+}
+
+.tariffs-table {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+
+
+
+
+/*--- Государственная пошлина ---*/
+.duty {
+	margin-bottom: 75px;
+}
+
+.duty-value {
+	width: 80%;
+	margin: 0 auto;	
+	margin-bottom: 30px;
+}
+
+.duty-note {
+	position: relative;
+
+	margin: 0;
+	padding: 0;
+	padding-left: 30px;
+
+	font-size: 16px;
+	font-style: italic;
+}
+
+.duty-note span {
+	position: absolute;
+	top: 0;
+	left: 16px;
+}
+
+.type-transport td:last-child {
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: left;
+	color: #333333;
+}
+
+
+
+
+/*--- Оплата ---*/
+.payment {
+	padding-top: 45px;
+	padding-bottom: 60px;
+
+	background-color: #e2e2e2;
+}
+
+.payment h2 {
+	margin-bottom: 60px;
+}
+
+.payment-list {
+	margin: 0;
+	padding: 0 30px;
+
+	list-style: none;
+}
+
+.payment-list > li {
+	position: relative;
+	
+	padding-left: 70px;
+
+	box-sizing: border-box;
+}
+
+.payment-list .what {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.payment-list .how {
+	margin: 0;
+	padding: 0;
+}
+
+.how span {
+	font-size: 12px;
+}
+
+.belarusbank {
+	/*margin-right: 50px;*/
+	margin-bottom: 50px;
+	padding-left: 70px;
+}
+
+.belarusbank::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 50px;
+	height: 50px;
+
+	background-image: url('../img/belarusbank.svg');
+	background-repeat: no-repeat;
+
+}
+
+.payment-list .ds102 {	
+	padding-left: 100px;
+}
+
+.ds102::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 80px;
+	height: 39px;
+
+	background-image: url('../img/logo-mini.svg');
+	background-repeat: no-repeat;
+}
+
+.img-erip {
+	position: relative;
+
+	display: inline-block;
+	width: 43px;
+}
+
+.img-erip img {
+	position: absolute;
+	top: -20px;
+	left: 3px;
+
+	display: inline-block;
+	width: 43px;
+	height: 30px;
+}
+
+.erip {
+	margin-top: 20px;
+	margin-left: -100px;
+	font-size: 15px;
+	text-align: left;
+
+	border: 1px dashed #e0a100;
+	border-radius: 5px;
+}
+
+.belarusbank .erip {
+	margin-left: -70px;
+}
+
+.erip .first {
+	font-weight: 600;	
+	color: #000000;
+}
+
+.erip .second a {
+	font-size: 14px;
+	font-style: italic;
+	color: #aaaaaa;
+
+	transition: all .3s ease-out;
+}
+
+.erip .second a:hover {
+	border-bottom: 1px dashed #999999;
+}
+
+.erip__title {
+	margin: 2px;
+	padding: 2px 10px;	
+
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 600;
+	
+	background-color: #e0a100;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.erip__list {
+	margin: 0;
+	padding: 5px 10px;
+	
+	list-style: none;
+
+	counter-reset: li;
+}
+
+.erip__item {
+	position: relative;
+
+	width: 100%;
+	padding-left: 30px;
+
+	box-sizing: border-box;
+}
+
+.erip__item::before {
+	counter-increment: li;
+	content: counter(li)'.';
+
+	position: absolute;
+	top: -4px;
+	left: -8px;
+	
+	width: 35px;
+	height: 100%;
+	padding-top: 5px;
+	
+	font-weight: 600;
+	text-align: center;
+	color: #000000;	
+	
+	box-sizing: border-box;
+}
+
+
+
+
+
+/*--- Фотогалерея ---*/
+.gallery {
+	margin-bottom: 75px;
+}
+
+.gallery-list {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.gallery-list li {
+	width: 25%;
+}
+
+.gallery-list a {
+	display: block;
+
+	line-height: 0;
+}
+
+.gallery-list img {
+	width: 100%;
+}
+
+
+
+
+/*--- Реклама ---*/
+.advertising {
+
+}
+
+.advertising-title {
+	margin-bottom: 15px;
+}
+
+
+.advertising-desc {
+	width: 65%;
+
+	margin: 0 auto;
+	margin-bottom: 30px;
+	padding: 0 15px;
+
+	font-size: 20px;
+	text-align: center;
+}
+
+.services-list {
+	position: relative;
+
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	padding: 10px 50px 5px 20px;
+
+	border: 1px solid #e0a100;
+	border-radius: 2px;
+
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.services-list::before {
+	content: '';
+
+	position: absolute;
+	top: -10px;
+	right: -15px;
+
+	width: 50px;
+	height: 50px;
+
+	background-color: #ffffff;
+	background-image: url('../img/repairs.svg');
+	background-repeat: no-repeat;
+	
+}
+
+.services-list li {
+	position: relative;
+
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+.services-list li::before {
+	content: '';
+
+	position: absolute;
+	top: 11px;
+	left: 0;
+
+	width: 5px;
+	height: 5px;	
+
+	background-color: #e0a100;
+	transform: rotate(45deg);
+}
+
+
+.advertising-phone {
+	position: relative;
+
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 75px;
+	padding: 0;	
+
+	font-size: 22px;
+	line-height: 30px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.advertising-phone > span {
+	padding: 0 20px;
+}
+
+.advertising-phone span .opacity {
+	position: relative;
+
+	color: rgba(0,0,0,.5);
+}
+
+.advertising-phone .opacity::before {
+	content: '';
+
+	position: absolute;
+	top: 4px;
+	left: -26px;
+
+	width: 20px;
+	height: 20px;
+
+	background-image: url('../img/phone.svg');
+	background-repeat: no-repeat;
+
+}
+
+
+
+
+/*--- Карта ---*/
+.map {
+	margin-bottom: 5px;
+
+	line-height: 0;
+}
+
+.map .container {
+	padding: 0;
+}
+
+.map-link {
+	display: block;
+	width: 100%;
+	height: 200px;
+
+	background-image: url('../img/map.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+
+	cursor: pointer;
+}
+
+.map-link:hover,
+.map-link:focus {
+	outline: none;
+	box-shadow: 
+		0 0 0 2px white,
+		0 0 0 4px #fc0;
+}
+
+
+
+
+/*--- FOOTER ---*/
+.main-footer {
+	padding-top: 45px;
+
+	color: #ffffff;
+
+	background-color: #222831;
+	
+}
+
+.main-footer > .container {
+	padding-bottom: 50px;
+
+	background-image: url('../img/background-logo.svg');
+	background-repeat: no-repeat;
+	background-position: 0 20px;
+}
+
+.footer-title {
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 600;
+	color: #e0a100;
+	text-align: center;
+}
+
+.footer-title span {
+	font-size: 20px;
+}
+
+.footer-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	width: 95%;
+	margin: 0 auto;
+}
+
+.work-mode {
+	margin-right: 20px;
+
+	text-align: center;
+}
+
+.contacts {
+	margin-right: 20px;
+
+	text-align: center;
+}
+
+.footer-wrapper h2 {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	padding-bottom: 5px;
+
+	font-size: 20px;
+	text-transform: uppercase;
+
+	border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.footer-wrapper p {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-schedule p {
+	font-weight: 600;
+	color: rgba(255,255,255,.7);
+}
+
+.footer-schedule p span {
+	font-weight: 300;
+}
+
+.contacts p {
+	font-weight: 600;
+	color: rgba(255,255,255,.5);
+}
+
+.contacts h2 span {
+	position: relative;
+
+	padding-left: 45px;
+}
+
+.contacts h2 span::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 35px;
+	height: 35px;
+
+	background-image: url('../img/contact.svg');
+	background-repeat: no-repeat;
+}
+
+.footer-wrapper .contacts-address {
+	margin-bottom: 10px;
+}
+
+.contacts-phone {
+	font-size: 28px;
+}
+
+.work-mode p {
+	color: rgba(255,255,255,.5);	
+}
+
+.work-mode h2 span {
+	position: relative;
+
+	padding-left: 45px;
+}
+
+.work-mode h2 span::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 35px;
+	height: 35px;
+
+	background-image: url('../img/schedule.svg');
+	background-repeat: no-repeat;
+}
+
+.footer-links h2 span {
+	position: relative;
+
+	padding-left: 30px;
+}
+
+.footer-links h2 span::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 20px;
+	height: 20px;
+
+	background-image: url('../img/link.svg');
+	background-repeat: no-repeat;
+}
+
+.links-list {
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.links-list a {
+	color: #e0a100;
+	opacity: .7;
+
+	transition: all .2s ease;
+}
+
+.links-list a:hover,
+.links-list a:focus {
+	text-decoration: underline;	
+}
+
+.links-list a:focus {
+	box-shadow: 
+		0 0 0 2px #222831,
+		0 0 0 4px #fc0;	
+}
+
+.copyright {
+	text-align: center;
+
+	background: #2e343e;
+}
+
+.copyright p {
+	display: inline-block;
+	margin: 0;
+	padding: 15px;
+
+	opacity: .5;
+}
+
+
+/*--- MEDIA ---*/
+@media only screen and (max-width: 1599px) {
+	body {		
+		font-size: 16px;
+	}
+
+	.advertising-desc {
+		font-size: 18px;
+	}
+
+	.footer-wrapper {
+		width: 80%;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+	.container {
+		width: 940px;		
+	}
+
+	.header-address {
+		margin-bottom: 120px;
+
+		font-size: 18px;
+	}
+
+	.header-title {
+		font-size: 80px;
+		line-height: 60px;
+	}
+
+	.header-title span {
+		font-size: 42px;
+	}
+
+	.accordeon .accordeon-title {
+		font-size: 20px;
+	}
+
+	.type-transport td:last-child {
+		font-size: 18px;
+	}
+
+	.services-list {
+		width: 65%;
+	}
+
+	.advertising-phone {
+		width: 65%;
+	}
+
+	.footer-wrapper {
+		width: 100%;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
+
+	.main-header {
+		padding-bottom: 80px;
+	}
+	
+	.top {
+		flex-wrap: wrap;
+		justify-content: center;
+		
+	}
+
+	.top-logo {
+		padding-bottom: 20px;
+	}	
+
+	.top-schedule {
+		width: 50%;
+		margin: 0 auto;
+
+		text-align: center;
+	}
+
+	.header-address {
+		margin-bottom: 80px;
+
+		text-align: center;		
+	}
+
+	.header-title {
+		font-size: 65px;
+		line-height: 65px;
+	}
+
+	.header-title span {
+		font-size: 38px;
+		line-height: 38px;
+	}
+
+	.documents-list {
+		width: 80%;
+	}
+
+	.tariffs-table {
+		width: 100%;
+	}	
+
+	.payment-list li.belarusbank {
+		margin-right: 0;
+		padding-left: 100px;
+	}
+
+	.payment-list li.belarusbank::before {
+		top: 5px;
+		left: 30px;
+	}
+
+	.belarusbank .erip {
+		margin-left: -100px;
+	}
+
+	.services-list {
+		width: 85%;
+	}
+
+	.advertising-phone {
+		width: 85%;
+	}
+
+	.contacts {
+		width: 45%;		
+	}
+
+	.work-mode {
+		width: 45%;
+		margin-right: 0;
+	}
+
+	.footer-links {
+		width: 45%;
+
+		margin: 0 auto;
+		margin-top: 30px;
+
+		text-align: center;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+	.container {
+		width: 100%;
+
+		box-sizing: border-box;
+	}
+
+	.mission {
+		margin-bottom: 30px;
+	}
+
+	.as-h2 {
+		margin-bottom: 25px;
+
+		font-size: 28px;
+		line-height: 30px;
+	}
+
+	.documents {
+		margin-bottom: 30px;
+	}
+
+	.documents-list {
+		width: 90%;
+	}
+
+	.tariffs {
+		margin-bottom: 40px;
+		padding-top: 30px;
+	}
+
+	.tariffs h2 {
+		margin-bottom: 10px;
+	}
+
+	.tariffs .table td {
+		padding-top: 15px;
+	}
+
+	.tariffs-table {
+		margin-bottom: 40px;
+	}
+
+	.duty {
+		margin-bottom: 45px;
+	}
+
+	.duty-value {
+		width: 100%;
+	}
+
+	.duty .table td {
+		padding-top: 10px;
+	}
+
+	.payment {
+		padding-top: 30px;
+		padding-bottom: 45px;
+	}
+
+	.payment h2 {
+		margin-bottom: 30px;
+	}
+
+	.belarusbank::before {
+		left: 30px;		
+	}
+
+	.payment-list .ds102 {
+		width: 100%;
+	}
+
+	.gallery {
+		margin-bottom: 45px;
+	}
+
+	.advertising-desc {
+		width: auto;
+	}
+
+	.services-list {
+		width: 95%;
+
+		line-height: 21px;
+	}
+	
+	.advertising-phone {
+		margin-bottom: 30px;
+	}
+
+	.advertising-phone > span {
+		display: block;
+		padding-right: 0;
+	}
+
+	.main-footer > .container {
+		background-position: bottom -55px center;
+	}
+
+	.footer-title {
+		font-size: 28px;
+		line-height: 32px;
+	}
+
+	.copyright a {
+		display: none;
+	}
+}
+
+
+/* Свой размер */
+@media only screen and (max-width: 600px) {
+	.main-header {
+		padding-bottom: 50px;
+	}
+
+	.top-schedule {
+		width: 100%;
+	}
+
+	.header-address {
+		margin-bottom: 50px;
+	}
+
+	.payment-list {
+		padding: 0 20px;
+	}
+
+	.gallery-list li {
+		width: 50%;
+	}
+
+	.contacts {
+		width: 70%;
+		margin: 0 auto;
+		margin-bottom: 45px;
+	}
+
+	.work-mode {
+		width: 70%;
+		margin: 0 auto;
+		margin-bottom: 45px;
+	}
+
+	.footer-links {
+		width: 70%;
+		margin-top: 0;
+	}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+	main h2 {
+		margin-bottom: 25px;		
+
+		font-size: 28px;
+		line-height: 36px;
+	}
+
+	.top {
+		padding-top: 30px;
+	}
+
+	.top-logo {
+		padding-top: 55px;
+		padding-left: 0;
+
+		text-align: center;
+	}
+
+	.top-logo::before {
+		top: 0;
+		left: 50%;
+
+		margin-left: -60px;
+	}
+
+	.header-address span {
+		display: block;
+	}
+
+	.header-title {
+		font-size: 42px;
+		line-height: 42px;
+	}
+
+	.header-title span {
+		font-size: 32px;
+		line-height: 32px;
+	}
+
+	.header-phone {
+		font-size: 23px;
+	}
+
+	.header-phone p.phone-desc {
+		margin-bottom: 10px;
+	}
+
+	.header-phone p.phone-number {
+		font-size: 28px;
+	}
+
+	.tariffs {
+		padding-top: 30px;
+		margin-bottom: 30px;
+	}	
+
+	.tariffs-table {
+		margin-bottom: 30px;
+	}
+
+	.duty {
+		margin-bottom: 30px;
+	}
+
+	.accordeon .accordeon-title {
+		font-size: 20px;
+	}
+
+	.type-transport td:last-child {
+		font-size: 16px;
+	}
+
+	.duty-note {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	
+	.payment {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.payment-list {
+		padding: 0 10px;		
+	}
+
+	.payment-list > li {
+		padding-top: 60px;
+
+		text-align: center;
+	}
+
+	.payment-list li.belarusbank {
+		padding-top: 70px;
+		padding-left: 0;
+	}
+
+	.payment-list li.belarusbank::before {
+		left: 50%;
+
+		margin-left: -25px;
+	}
+
+	.payment-list .ds102 {		
+		padding-left: 0;
+	}
+
+	.ds102::before {
+		left: 50%;
+
+		margin-left: -40px;
+	}
+
+	.erip,
+	.belarusbank .erip {
+		margin-left: 0;
+	}
+
+	.erip__item {
+		padding-top: 0;
+	}
+
+	.gallery {
+		margin-bottom: 30px;
+	}
+
+	.advertising-desc {
+		margin-bottom: 15px;
+
+		font-size: 16px;
+	}
+
+	.advertising-phone {
+		margin-bottom: 30px;
+	}
+
+	.contacts {
+		width: 100%;
+	}
+
+	.work-mode {
+		width: 100%;
+	}
+
+	.footer-links {
+		width: 100%;
+	}
+}
+
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+
+
+
+
+
+
+
+
+
+
+
+
+
