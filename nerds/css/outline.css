@@ -1,0 +1,23 @@
+.out-1 {	
+	background: rgba(0,116,1,.4);
+	outline: 2px solid #007401;
+	outline-offset: -2px;
+}
+
+.out-2 {
+	background: rgba(255,39,75,.4);
+	outline: 2px solid #FF274B;
+	outline-offset: -2px;
+}
+
+.out-3 {
+	background: rgba(235,244,54,.4);
+	outline: 2px solid #EBF436;
+	outline-offset: -2px;
+}
+
+.out-4 {
+	background: rgba(112,16,111,.4);
+	outline: 2px solid #70106F;
+	outline-offset: -2px;
+}
