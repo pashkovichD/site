@@ -1,0 +1,42 @@
+.list {	
+	padding: 15px;
+	line-height: 28px;
+	color: #999999;
+	border-top: 1px dashed #c5c5c5;
+	border-bottom: 1px dashed #c5c5c5;
+}
+
+.list__title {
+	font-size: 20px;	
+}
+
+.list__item {
+	position: relative;
+	padding-left: 20px;
+	&:before {
+		position: absolute;
+		top: 14px;
+		left: 0;
+		content: '';
+		width: 7px;
+		height: 7px;
+		background-color: #bf882a;
+		transform: rotate(45deg);
+	}
+}
+
+@media (min-width: @mobile-width) {
+
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: @tablet-width) {
+	
+}
+
+@media (min-width: @desktop-width) {
+
+}
