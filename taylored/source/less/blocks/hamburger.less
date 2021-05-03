@@ -1,0 +1,67 @@
+.hamburger {
+	width: 25px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+}
+.hamburger__line {
+	position: relative;
+	top: 50%;
+	display: block;
+	width: 25px;
+	height: 2px;
+	margin-top: -11px;
+	background: #a0a1a3;
+	-webkit-transition: -webkit-transform 0.35s;
+	        transition: -webkit-transform 0.35s;
+	     -o-transition: transform 0.35s;
+	transition: transform 0.35s;
+	transition: transform 0.35s, -webkit-transform 0.35s;
+}
+.hamburger__line::before,
+.hamburger__line::after {
+	content: '';
+	display: block;
+	width: 25px;
+	height: 2px;
+	background: #a0a1a3;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: -webkit-transform 0.35s;
+	-o-transition: transform 0.35s;
+	transition: transform 0.35s;
+	transition: transform 0.35s, -webkit-transform 0.35s;
+	-webkit-transform: translate(0%, -7px);
+	  -ms-transform: translate(0%, -7px);
+	      transform: translate(0%, -7px);
+}
+.hamburger__line::after {
+	-webkit-transform: translate(0%, 5px);
+	  -ms-transform: translate(0%, 5px);
+	      transform: translate(0%, 5px);
+}
+.hamburger__click span {
+	-webkit-transform: rotate(90deg);
+	  -ms-transform: rotate(90deg);
+	      transform: rotate(90deg);
+	background: transparent;
+}
+.hamburger__click span:before {
+	-webkit-transform: translate(0%, 0px) rotate(45deg);
+	  -ms-transform: translate(0%, 0px) rotate(45deg);
+	      transform: translate(0%, 0px) rotate(45deg);
+}
+.hamburger__click span:after {
+	-webkit-transform: translate(0%, -2px) rotate(-45deg);
+	  -ms-transform: translate(0%, -2px) rotate(-45deg);
+	      transform: translate(0%, -2px) rotate(-45deg);
+}
+
+@media (min-width: @tablet-width) {
+	
+}
+
+@media (min-width: @desktop-width) {
+
+}
